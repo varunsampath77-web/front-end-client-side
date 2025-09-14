@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <div class="form-container">
+        <h2>Login to Your Account</h2>
+        <p>Welcome back! Please enter your details.</p>
+
+        <!-- Add form ID here -->
+        <form id="loginForm">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+
+          <div class="forgot-link">
+            <a href="forgot.html">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Sign in</button>
+
+          <div class="or">Or</div>
+          <button type="button" class="google-signin">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo" />
+            Sign in with Google
+          </button>
+        </form>
+
+        <p class="signup-text">
+          Don’t have an account? <a href="#">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <img src="image/img.jpg" alt="Cleaning team" />
+    </div>
+  </div>
+
+  <!-- Toast message container -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JavaScript -->
+  <script src="login-validation.js"></script>
+</body>
+</html>
